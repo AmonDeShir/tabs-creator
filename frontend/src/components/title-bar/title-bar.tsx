@@ -6,7 +6,9 @@ export const TitleBar = (props: ParentProps) => {
 
   return (
     <div role="heading" class={styles["title-bar"]}>
-      {props.children}
+      <div class={styles["title-bar__title"]}>
+        {props.children}
+      </div>
     </div>
   );
 };
