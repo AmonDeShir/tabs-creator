@@ -9,8 +9,5 @@
   "scripts": {
     "dev": "yarn workspaces foreach --parallel --interlaced --all run dev",
     "test": "yarn workspaces foreach --parallel --interlaced --all run test"
-  },
-  "devDependencies": {
-    "vitest": "^1.2.0"
   }
 }
