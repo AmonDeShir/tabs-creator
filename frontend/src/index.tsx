@@ -4,15 +4,16 @@ import { render } from 'solid-js/web'
 import './index.css'
 import { Header } from './components/header/header';
 import { Center } from './components/center/center';
+import { TitleBar } from './components/title-bar/title-bar';
 
 const root = document.getElementById('root')
 
 const App = () => (
-  <>qq
+  <>
     <Header />
     <Center justifyContent='space-between'>
-      <div>Songs</div>
-      <div>Main</div>
+      <div style="width: 100%; max-width: 380px;"><TitleBar>Search</TitleBar></div>
+      <div style="width: 100%"><TitleBar>Main</TitleBar></div>
     </Center>
   </>
 );
