@@ -2,11 +2,14 @@
 import { render } from 'solid-js/web'
 
 import './index.css'
+import { Header } from './components/header/header';
 
 const root = document.getElementById('root')
 
 const App = () => (
-    <>ABCD</>
+  <>
+    <Header />
+  </>
 );
 
 render(() => <App />, root!)
