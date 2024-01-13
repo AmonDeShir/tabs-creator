@@ -4,7 +4,7 @@ import { render } from 'solid-js/web'
 import './index.css'
 import { Header } from './components/header/header';
 import { Center } from './components/center/center';
-import { TitleBar } from './components/title-bar/title-bar';
+import { Page } from './components/page/page';
 
 const root = document.getElementById('root')
 
@@ -12,8 +12,8 @@ const App = () => (
   <>
     <Header />
     <Center justifyContent='space-between'>
-      <div style="width: 100%; max-width: 380px;"><TitleBar>Search</TitleBar></div>
-      <div style="width: 100%"><TitleBar>Main</TitleBar></div>
+      <Page color='main-dark' width='380px' title='Search'>Data</Page>
+      <Page title='Main'>Main</Page>
     </Center>
   </>
 );
