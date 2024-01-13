@@ -1,0 +1,12 @@
+{
+  "name": "tab-creator",
+  "packageManager": "yarn@4.0.2",
+  "workspaces": [
+    "ai-backend",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "yarn workspaces foreach --parallel --interlaced --all run dev"
+  }
+}
