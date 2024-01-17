@@ -13,5 +13,12 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     testTransformMode: { web: ["/\.[jt]sx?$/"] },
+    css: {
+      include: [/\.css$/],
+      exclude: [],
+      modules: {
+        classNameStrategy: 'stable'
+      }
+    }
   }
 });

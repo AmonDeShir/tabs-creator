@@ -15,11 +15,13 @@
   "devDependencies": {
     "@solidjs/testing-library": "^0.8.5",
     "@testing-library/jest-dom": "^6.2.0",
-    "jsdom": "^23.2.0",
+    "happy-dom": "^13.1.0",
+    "mq-polyfill": "^1.1.8",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vite-plugin-solid": "^2.8.0",
-    "vitest": "^1.2.0"
+    "vitest": "^1.2.0",
+    "vitest-matchmedia-mock": "^1.0.2"
   },
   "packageManager": "yarn@4.0.2"
 }
