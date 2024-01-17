@@ -1,9 +1,21 @@
 
 .header {
   width: 100%;
-  height: 420px;
+  height: 40vw;
   background-repeat: no-repeat;
-  background-position: 0px center;
+  background-position: 0px 80%;
   background-size: cover;
-  background-image: url(../../assets/img.jpg);
+  background-image: url(../../assets/img2.png);
+}
+
+@media (min-width: 500px) {
+  .header {
+    height: 30vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    height: 22.4vw;
+  }
 }
