@@ -19,9 +19,8 @@ export const Page = (props: ParentProps<Props>) => {
     return ` max-width: ${merged.width};`;
   });
 
-
   return (
-    <div class={styles.page + color()} style={maxWidth()}>
+    <div class={styles.page + " " + styles.page + color()} style={maxWidth()}>
       <TitleBar>{props.title}</TitleBar>
       {props.children}
     </div>
