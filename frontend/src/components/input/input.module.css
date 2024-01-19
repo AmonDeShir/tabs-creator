@@ -1,0 +1,36 @@
+
+.label {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  display: block;
+  font-family: Kelly Slab;
+}
+
+.label::before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  bottom: -1px;
+  border-style: solid;
+  border-color: var(--color-second);
+  border-width: 0px 0px 2.5px 0px;
+}
+
+.input {
+  text-align: center;
+  border-width: 0px;
+  background-color: transparent;
+  height: 100%;
+  line-height: 30px;
+  width: 100%;
+  font-size: 13px;
+  cursor: text;
+  color: white;
+  font-family: Kelly Slab;
+}
+
+.input:focus {
+  outline-width: 0;
+}
